@@ -1,4 +1,4 @@
-package real;
+package gms;
 import java.util.Random;
 //Lotto 6개의 랜덤숫자.
 //1~45 까지 랜덤 숫자.

@@ -1,4 +1,4 @@
-package real;
+package gms;
 
 import javax.swing.JOptionPane;
 public class Main {
