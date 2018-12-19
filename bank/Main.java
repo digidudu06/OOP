@@ -11,7 +11,7 @@ public class Main {
 					+ "1.회원가입 2.계좌 개통 3.계좌 보기")) {
 			
 			case "0":JOptionPane.showMessageDialog(null, "종료"); return;
-			case "1": 
+			case "1":
 				String id = JOptionPane.showInputDialog("ID 등록");
 				String name = JOptionPane.showInputDialog("이름 입력");
 				String ssn = JOptionPane.showInputDialog("주민번호 입력");
