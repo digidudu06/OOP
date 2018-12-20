@@ -1,4 +1,4 @@
-package bank1;
+package bank11_EJB;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -19,13 +19,25 @@ import java.text.DecimalFormat;
  * 5.info() 개인정보
  * */
 public class Account {
-	final static String BANK_NAME = "신한";
-	String accountNum, today;
-	int money;
+	public final static String BANK_NAME = "신한";
+	private String accountNum, today;
+	private int money;
 	Account(int money){
 		this.accountNum = generatorAccountNum();
 		this.today = today();
 		this.money = money;
+	}
+	public String getAccountNum() {
+		return accountNum;
+	}
+	public String getToday() {
+		return today;
+	}
+	public void setMoney(int money) {
+		this.money = money;
+	}
+	public int getMoney() {
+		return money;
 	}
 	public String generatorAccountNum() {
 		String accountNum = "";
@@ -80,13 +92,13 @@ public class Account {
 		}
 		return decimalFormat.format(interestMoney);
 	}
-	public String info(String name) {
+	public String toString() {
 		return String.format("[계좌 정보]\n"
 				+ "은행이름 %s은행\n"
 				+ "개설일 %s\n"
 				+ "이름 %s\n"
 				+ "계좌번호 %s\n"
-				+ "잔액 %s원\n", BANK_NAME, today, name, accountNum, money);
+				+ "잔액 %s원\n", BANK_NAME, today, accountNum, money);
 	}
 
 }

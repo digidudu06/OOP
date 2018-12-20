@@ -1,4 +1,4 @@
-package bank1;
+package bank01;
 
 public class Member {
 	String id, name, ssn, pass; //인스턴스 변수(=멤버 변수)

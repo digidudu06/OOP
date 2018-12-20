@@ -1,4 +1,4 @@
-package bank1;
+package bank11_EJB;
 
 import javax.swing.JOptionPane;
 
@@ -15,7 +15,8 @@ public class Main {
 					+ "4.계좌정보\n"
 					+ "5.입금 \n"
 					+ "6.출금\n"
-					+ "7.이자계산")) {
+					+ "7.이자계산\n"
+					+ "8.비번변경")) {
 			case "0": JOptionPane.showMessageDialog(null, "종료됩니다.");return;
 			case "1": 
 				String id = JOptionPane.showInputDialog("아이디 입력");			
@@ -26,13 +27,13 @@ public class Main {
 				JOptionPane.showMessageDialog(null, "회원 가입 완료 ^_~");
 				break;
 			case "2": 
-				JOptionPane.showMessageDialog(null, member.info());
+				JOptionPane.showMessageDialog(null, member.toString());
 				break;
 			case "3":
 				account = new Account(0);
 				break;
 			case "4":
-				JOptionPane.showMessageDialog(null, account.info(member.name));
+				JOptionPane.showMessageDialog(null, account.toString());
 				break;	
 			case "5":
 				String inputMoney = JOptionPane.showInputDialog("입금액");
@@ -48,6 +49,11 @@ public class Main {
 				JOptionPane.showMessageDialog(null, 
 						account.interest(Double.parseDouble(automoney), 
 								Integer.parseInt(month)));
+				break;
+			case "8": 
+				String pw = JOptionPane.showInputDialog("바꿀 비밀번호 입력");
+				member.setPass(pw);
+				JOptionPane.showMessageDialog(null, member.toString());
 				break;
 			}
 		}
