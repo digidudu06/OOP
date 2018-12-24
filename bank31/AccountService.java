@@ -23,5 +23,4 @@ public interface AccountService {
 	/**
 	 * 이자액 구하기
 	 * */
-	public String interest(double money, int month);
 }

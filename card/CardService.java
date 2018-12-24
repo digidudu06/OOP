@@ -1,5 +1,6 @@
 package card;
 
-public class CardService {
+public interface CardService {
+	public void bet(String cardKind, String cardNum);
 
 }

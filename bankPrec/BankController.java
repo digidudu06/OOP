@@ -1,13 +1,13 @@
-package bank31;
+package bankPrec;
 
 import javax.swing.JOptionPane;
 
-public class Controller {
+public class BankController { //은닉화
 
 	public static void main(String[] args) {
 		MemberBean member = null;
 		AccountBean account = null;
-		AccountService accountService = new AccountServiceImpl();
+		AccountService accountService = new AccountService();
 		MemberService memberService = new MemberServiceImpl();
 		while(true) {
 			switch(JOptionPane.showInputDialog("0.종료\n"
@@ -20,10 +20,11 @@ public class Controller {
 					+ "7.이자계산\n"
 					+ "8.비번변경")) {
 			case "0": JOptionPane.showMessageDialog(null, "종료됩니다.");return;
-			case "1": 
-				member = memberService.join(
-						JOptionPane.showInputDialog("아이디 입력"), JOptionPane.showInputDialog("이름 입력"), 
-						JOptionPane.showInputDialog("주민번호 입력"), JOptionPane.showInputDialog("비밀번호 입력"));
+			case "1":
+				member = memberService.join(JOptionPane.showInputDialog("아이디 입력"),
+						JOptionPane.showInputDialog("이름 입력"),
+						JOptionPane.showInputDialog("주민번호 입력"),
+						JOptionPane.showInputDialog("비밀번호 입력"));
 				JOptionPane.showMessageDialog(null, "회원 가입 완료 ^_~");
 				break;
 			case "2": 

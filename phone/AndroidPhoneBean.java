@@ -1,6 +1,6 @@
 package phone;
 
-public class AndroidPhoneBean extends IPhoneBean {
+public class AndroidPhoneBean extends IPhoneBean {	//커서의 방향
 	private String display;
 	
 	public void setDisplay(String display) {

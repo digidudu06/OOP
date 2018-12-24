@@ -32,10 +32,4 @@ public class AccountServiceImpl implements AccountService{
 		return null;
 	}
 
-	@Override
-	public String interest(double money, int month) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
 }
