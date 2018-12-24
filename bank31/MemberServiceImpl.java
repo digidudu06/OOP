@@ -68,6 +68,7 @@ public class MemberServiceImpl implements MemberService{
 			if(members[i].getId().equals(id) && members[i].getPass().equals(pass) && members[i].getSsn().equals(ssn)) {
 				members[i] = null;
 				JOptionPane.showMessageDialog(null, "탈퇴 완료");
+				count--;
 				break;
 			}else {
 				JOptionPane.showMessageDialog(null, "다시");
