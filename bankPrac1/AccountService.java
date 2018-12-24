@@ -1,4 +1,4 @@
-package bankPrec;
+package bankPrac1;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;

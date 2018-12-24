@@ -1,4 +1,4 @@
-package bankPrec;
+package bankPrac;
 
 public interface MemberService {	//인터페이스
 	//회원가입

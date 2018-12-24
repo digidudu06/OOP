@@ -1,4 +1,4 @@
-package bankPrec;
+package bankPrac;
 
 import javax.swing.JOptionPane;
 

@@ -54,10 +54,10 @@ public class MemberServiceImpl implements MemberService{
 		for(int i=0;i<count;i++) {
 			if(members[i].getId().equals(id) && members[i].getPass().equals(pass)) {
 				members[i].setPass(newPass);
-				JOptionPane.showMessageDialog(null, "수정완료");
+//				JOptionPane.showMessageDialog(null, "수정완료");
 				break;
 			}else {
-				JOptionPane.showMessageDialog(null, "다시 입력하세요.");
+//				JOptionPane.showMessageDialog(null, "다시 입력하세요.");
 				break;
 			}
 		}
@@ -67,11 +67,10 @@ public class MemberServiceImpl implements MemberService{
 		for(int i=0;i<count;i++) {
 			if(members[i].getId().equals(id) && members[i].getPass().equals(pass) && members[i].getSsn().equals(ssn)) {
 				members[i] = null;
-				JOptionPane.showMessageDialog(null, "탈퇴 완료");
-				count--;
+//				JOptionPane.showMessageDialog(null, "탈퇴 완료");
 				break;
 			}else {
-				JOptionPane.showMessageDialog(null, "다시");
+//				JOptionPane.showMessageDialog(null, "다시");
 				break;
 			}
 		}

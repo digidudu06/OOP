@@ -1,4 +1,4 @@
-package bankPrec;
+package bankPrac;
 
 public class MemberBean {
 	private String id, name, ssn, pass; //인스턴스 변수(=멤버 변수) 메모리에 저장되는 변수라서 private 접근제어자로 은닉화하여 보이지 않게한다.

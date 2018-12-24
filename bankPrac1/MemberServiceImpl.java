@@ -1,4 +1,4 @@
-package bankPrec;
+package bankPrac1;
 
 public class MemberServiceImpl implements MemberService {
 
