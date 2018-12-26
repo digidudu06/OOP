@@ -1,20 +1,25 @@
 package bank31;
 
 public interface MemberService {
-	// 회원가입
+	/**
+	 * CREATE
+	 * */
 	public void join(String id,String name,String pass,String ssn);
-	//========================
-	// 목록보기
-	public MemberBean[] list();
-	// 개인정보 검색
-	public MemberBean find(String id);
-	// 로그인
-	public boolean login(String id, String pass);
-	// 회원수
-	public int count();
-	//========================
-	// 정보수정
-	public void update(String id, String pass, String newPass);
-	// 회원 탈퇴
-	public void delete(String id, String pass, String ssn);
+	/**
+	 * READ
+	 * */
+	public MemberBean[] findAll();
+	public MemberBean[] findByName(String name);
+	public MemberBean findById(String id);
+	public boolean existId(String id);
+	public boolean existMember(String id, String pass);
+	public String countMember();
+	/**
+	 * UPDATE
+	 * */
+	public void updatePassword(String id, String pass, String newPass);
+	/**
+	 * DELETE
+	 * */
+	public void deleteMember(String id, String pass, String ssn);
 }
